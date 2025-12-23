@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Task Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Task Manager</h1>
+
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter a task" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <div class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="stats">
+        Total: <span id="totalTasks">0</span> |
+        Active: <span id="activeTasks">0</span> |
+        Completed: <span id="completedTasks">0</span>
+    </div>
+
+    <button id="themeToggle">Toggle Dark Mode</button>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
